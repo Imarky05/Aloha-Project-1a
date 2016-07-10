@@ -302,6 +302,10 @@ p.sufu_par {
 	text-indent: 5%;
 }
 
+.inputEmail:active {
+	box-shadow: rgba(0,0,0,0.5);
+}
+
 .subscribe_button {
 	cursor: pointer;
 	min-width: 25%;
@@ -316,6 +320,11 @@ p.sufu_par {
 	font-family: 'raleway';
 	font-weight: bold;
 	font-size: 1rem;
+}
+
+.subscribe_button:hover {
+	background-color: #b64036;
+	border-color: #b64036;
 }
 
 
