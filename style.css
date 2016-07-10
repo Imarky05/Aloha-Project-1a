@@ -142,6 +142,13 @@ html {
 .navitems {
 	height: 55px;
 	margin: 20px 10px;
+	transition: .5s;
+}
+
+.navbar .navitems:hover {
+	transition: 0.5s;
+	transform: scale(1.1);
+	margin: 20px 30px;
 }
 
 /*----------------------------------------------------------------Hero Banner Section*/
@@ -226,6 +233,23 @@ html {
 	font-family: 'raleway';
 }
 
+.mlp_container p {
+	color: #969696;
+}
+
+.mlp_container a:link {
+	text-decoration: none;
+	color: #969696;
+}
+
+.mlp_container li:hover {
+	transition: .3s;
+	cursor: pointer;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+	transform: scale(0.99);
+	border-radius: 20px;
+}
+
 .itm_category {
 	font-weight: bold;
 	text-transform: uppercase;
@@ -282,7 +306,6 @@ p.sufu_par {
 }
 
 .subscribe {
-	overflow: hidden;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -293,8 +316,8 @@ p.sufu_par {
 	height: 30px;
 	position: relative;
 	left: 10%;
-	border: 10px;
-	border-style: solid;
+	padding: 10.5px;
+	border-style: none;
 	border-color: white;
 	border-radius: 30px;
 	font-family: 'raleway';
@@ -302,8 +325,9 @@ p.sufu_par {
 	text-indent: 5%;
 }
 
-.inputEmail:active {
-	box-shadow: rgba(0,0,0,0.5);
+.inputEmail:focus {
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	outline-width: 0;
 }
 
 .subscribe_button {
@@ -323,8 +347,11 @@ p.sufu_par {
 }
 
 .subscribe_button:hover {
+	transition: 0.5s;
 	background-color: #b64036;
 	border-color: #b64036;
+	transform: scale(.95);
+	outline-width: 0;
 }
 
 
