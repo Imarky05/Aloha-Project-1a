@@ -326,6 +326,7 @@ p.sufu_par {
 }
 
 .inputEmail:focus {
+	transition: .5s;
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
 	outline-width: 0;
 }
