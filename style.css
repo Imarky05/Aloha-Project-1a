@@ -148,7 +148,7 @@ html {
 .navbar .navitems:hover {
 	transition: 0.5s;
 	transform: scale(1.1);
-	margin: 20px 30px;
+	margin: 20px;
 }
 
 /*----------------------------------------------------------------Hero Banner Section*/
@@ -226,6 +226,7 @@ html {
 }
 
 .mlp_container li {
+	transition: .5s;
 	text-align: center;
 	font-size: 1rem;
 	color: #969696;
@@ -312,6 +313,7 @@ p.sufu_par {
 }
 
 .inputEmail {
+	transition: .5s;
 	width:	80%;
 	height: 30px;
 	position: relative;
@@ -323,15 +325,18 @@ p.sufu_par {
 	font-family: 'raleway';
 	font-size: 1rem;
 	text-indent: 5%;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.3);
 }
 
 .inputEmail:focus {
 	transition: .5s;
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
 	outline-width: 0;
+	transform: scale(1.02);
 }
 
 .subscribe_button {
+	transition: .3s;
 	cursor: pointer;
 	min-width: 25%;
 	color: white;
@@ -382,13 +387,16 @@ footer {
 
 .email {
 	color: white;
+	transition: .3s;
 }
 
 .email:hover {
+	transition: .3s;
 	color: #b64036;
 }
 
 .social_media {
+	transition: .2s;
 	text-align: center;
 }
 
@@ -402,6 +410,7 @@ footer {
 }
 
 .social_media :hover {
+	transition: .2s;
 	color: #b64036;
 }
 
