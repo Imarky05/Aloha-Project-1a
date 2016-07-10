@@ -364,6 +364,20 @@ footer {
 	text-align: center;
 }
 
+.social {
+	color: white;
+	min-width: 30px;
+}
+
+.social_media a:link {
+	text-decoration: none;
+}
+
+.social_media :hover {
+	color: #b64036;
+}
+
+
 .social_media ul {
 	overflow: hidden;
 	margin: 50px auto 0 auto;
@@ -371,13 +385,15 @@ footer {
 
 .social_media li {
 	display: inline-block;
-	margin: 0 .5rem;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 }
 
 /*-----------Below are text for the Logos --> its display in when it reaches 600px and more*/
+
 .sm_text {
 	display: none;
+	font-family: 'raleway';
+	color: white;
 }
 
 /*--------------------------------------------------------------------------Breakpoints*/
@@ -423,17 +439,8 @@ footer {
 		margin: 0 1rem 0 auto;
 	}
 
-	.sm_text li {
-		text-align: left;
-		margin: 0 0 1rem 0;
-		font-family: 'raleway';
-	}
-
 	.sm_text {
 		display: inline;
-		float: left;
-		text-align: left;
-		margin: 0 auto 0 3rem;
 	}
 
 	/*--------max container is used to set width on certain elements----------*/
