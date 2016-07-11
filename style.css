@@ -395,14 +395,8 @@ footer {
 	color: #b64036;
 }
 
-.social_media {
-	transition: .2s;
-	text-align: center;
-}
-
 .social {
 	color: white;
-	min-width: 30px;
 }
 
 .social_media a:link {
@@ -414,15 +408,20 @@ footer {
 	color: #b64036;
 }
 
-
-.social_media ul {
-	overflow: hidden;
-	margin: 50px auto 0 auto;
+.social_media {
+	font-size: 1.1rem;
+	transition: .2s;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
 }
 
-.social_media li {
-	display: inline-block;
-	font-size: 1.1rem;
+i.social {
+	width:	40px;
+}
+
+.social_media ul {
+	display: flex;
 }
 
 /*-----------Below are text for the Logos --> its display in when it reaches 600px and more*/
@@ -461,19 +460,23 @@ footer {
 	}
 
 	.social_media {
-		float: right;
-		margin: 0 2rem 0 0;
+		justify-content: flex-end;
 	}
 
-	.social_media li{
-		display: block;
-		margin: 0 0 1rem 0;
-	}
-	
 	.social_media ul {
+		margin-right: 2rem;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		height: 217px;
+	}
+
+	.social_media li {
+		min-width: 100px;
+		display: flex;
+	}
+
+	i.social {
 		text-align: left;
-		float: left;
-		margin: 0 1rem 0 auto;
 	}
 
 	.sm_text {
