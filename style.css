@@ -130,13 +130,17 @@ html {
 }
 
 /*-----------------------------------------------------------------Navigation Bar*/
+.navbar {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
 
 .aloha_logo	{
-	float: left;
+
 }
 
 .cart_logo {
-	float: right;
 }
 
 .navitems {
