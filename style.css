@@ -130,6 +130,14 @@ html {
 }
 
 /*-----------------------------------------------------------------Navigation Bar*/
+/*.nav {
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}*/
+
 .navbar {
 	display: flex;
 	align-items: center;
@@ -151,7 +159,6 @@ html {
 .navbar .navitems:hover {
 	transition: 0.5s;
 	transform: scale(1.1);
-	margin: 20px;
 }
 
 .navlink_pages {
@@ -159,7 +166,15 @@ html {
 	border-top: solid 1px #d7d7d7;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding: 10px 0;
+}
+
+.navlink {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .navlink_pages a{
@@ -172,6 +187,16 @@ html {
 
 .navlink_pages a:link {
 	text-decoration: none;
+}
+
+.navlink_names {
+	transition: .3s;
+}
+
+.navlink_names:hover {
+	transition: .3s;
+	font-size: 1.2rem;
+	color: #b64036;
 }
 
 /*----------------------------------------------------------------Hero Banner Section*/
@@ -212,8 +237,6 @@ html {
 /*------------------------------------------Hand-Crafted Section || hc = Hand Crafted*/
 
 .hc {
-	border: 1px solid #d7d7d7;
-	border-style: none none solid none;
 	overflow: hidden;
 }
 
@@ -242,42 +265,126 @@ html {
 }
 
 .square_itm {
-	max-width: 50%;
 	flex: 1 0 50%;
+	max-width: 50%;
+	min-height: 240px;
 }
 
 .wide_itm {
-	max-width: 100%;
 	flex: 2 0 100%;
+	max-width: 100%;
+	min-height: 240px;
 }
+
 .men_list {
 	font-family: 'raleway';
 	font-weight: bold;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	color: white;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .men_item {
+	transition: 1s;
+	box-sizing: border-box;
+	height: 50vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: solid 4px white;
+	position: relative;
+
 }
+
+.men_item:hover {
+	transition: .5s;
+	z-index: 3;
+	letter-spacing: 10px;
+
+}
+
 
 .men_item:nth-child(1) {
 	background: 
-		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+		url(assets/images/mens-category.jpg) no-repeat center center;
+		background-size: cover;
+		border-width: 4px 0;
 }
 
 .men_item:nth-child(2) {
-	background: 
-		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+	background:
+		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+		url(assets/images/trends-category.jpg) no-repeat center center;
+		background-size: cover;
+	border-left: none;
 
 }
 
 .men_item:nth-child(3) {
 	background: 
-		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+		url(assets/images/glasses-category.jpg) no-repeat center center;
+		background-size: cover;
+	border-right: none;
+}
+
+
+
+.women_list {
+	font-family: 'raleway';
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	display: flex;
+	color: white;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+.women_item {
+	transition: 1s;
+	box-sizing: border-box;
+	height: 50vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 4px white;
+	position: relative;
+}
+
+.women_item:hover {
+	transition: .5s;
+	z-index: 3;
+	letter-spacing: 10px;
+}
+
+.women_item:nth-child(1) {
+	background: 
+		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+		url(assets/images/womens-category.jpg) no-repeat center center;
+		background-size: cover;
+		border-width: 4px 0;
+}
+
+.women_item:nth-child(2) {
+	background:
+		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+		url(assets/images/sale-category.jpg) no-repeat center center;
+		background-size: cover;
+	border-left: none;
+
+}
+
+.women_item:nth-child(3) {
+	background: 
+		linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+		url(assets/images/bags-category.jpg) no-repeat center center;
+		background-size: cover;
+	border-right: none;
 }
 
 /*------------------------------Most-Loved Products Section || mlp = Most Loved Products*/
@@ -527,11 +634,73 @@ i.social {
 		align-self: flex-end;
 	}
 
-	.navlink_pages {
+	.navlink {
 		flex: 2 0 0;
 		align-self: center;
 		order: 2;
+	}
+
+	.navlink_pages {
 		border: none;
+	}
+
+	/*-----------------------------*/
+
+	.men_item {
+		height: 25vw;
+	}
+
+	.women_item {
+		height: 25vw;
+	}
+
+	.square_itm {
+		flex: 1 0 25%;
+		max-width: 50%;
+		min-height: 150px;
+	}
+	.men_item:nth-child(1) {
+		border-width: 4px 4px 4px 0;
+	}
+
+	.men_item:nth-child(2) {
+		border-left-style: solid;
+	}
+
+	.men_item:nth-child(3) {
+		border-right: none;
+	}
+
+	.women_item:nth-child(1) {
+		order: 3;
+		border-width: 4px 0 4px 4px;
+	}
+
+	.women_item:nth-child(2) {
+		order: 1;
+		border-left: none;
+
+	}
+
+	.women_item:nth-child(3) {
+		order: 2;
+		border-right-style: solid;
+	}
+
+	/*.men_item:hover {
+		border-style: none;
+	}
+
+	.women_item:hover {
+		border-style: none;
+	}*/
+
+	/*-----------------------------*/
+
+	.wide_itm {
+		flex: 2 0 50%;
+		max-width: 100%;
+		min-height: 150px;
 	}
 
 	.mlp_container li {
@@ -590,6 +759,14 @@ i.social {
 
 	.container{
 		width: 1240px;
+	}
+
+	.men_item {
+		height: 310px;
+	}
+
+	.women_item {
+		height: 310px;
 	}
 
 	.mlp_container li {

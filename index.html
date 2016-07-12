@@ -13,17 +13,20 @@
 <body>
 
 <!-- Navigation Bar-->
-
+	<section class="nav">
 	<div class="navbar container">
 			<a href="#" class="aloha_logo"><img class="navitems" src="./assets/images/aloha-logo.svg" alt="Aloha Logo" /></a>
 			<a href="#" class="cart_logo"><img class="navitems" src="./assets/images/cart-icon.svg" alt="Checkout" /></a>
-		<ul class="navlink_pages">
-			<li><a class="navlink_names" href="#">ABOUT</a></li>
-			<li><a class="navlink_names" href="#">SHOP</a></li>
-			<li><a class="navlink_names" href="#">FEATURED</a></li>
-			<li><a class="navlink_names" href="#">UPDATES</a></li>
-		</ul>
+		<nav class="navlink">
+			<ul class="navlink_pages">
+				<li><a class="navlink_names" href="#about">ABOUT</a></li>
+				<li><a class="navlink_names" href="#shop">SHOP</a></li>
+				<li><a class="navlink_names" href="#featured">FEATURED</a></li>
+				<li><a class="navlink_names" href="#updates">UPDATES</a></li>
+			</ul>
+		</nav>
 	</div>
+	</section>
 
 <!-- Hero Banner Section -->
 
@@ -36,16 +39,31 @@
 
 <!-- Hand-Crafted Section || hc = Hand Crafted -->
 
-	<section class="hc container">
+	<section class="hc container" id="about">
 		<div class="hc_container">
 			<h2 class="hc_hed"><em>Hand-Crafted</em> <strong>Styles</strong></h2>
 			<p class="hc_par max_container">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
 		</div>
 	</section>
 
+<!-- Mens and Womens Section || mw = Mens and Womens -->
+
+<section class="mw_container container" id="shop">
+	<div class="men_list">
+		<p class="men_item wide_itm">MEN'S</p>
+		<p class="men_item square_itm">TRENDS</p>
+		<p class="men_item square_itm">GLASSES</p>
+	</div>
+	<div class="women_list">
+		<p class="women_item wide_itm">WOMEN'S</p>
+		<p class="women_item square_itm">SALE</p>
+		<p class="women_item square_itm">BAGS</p>
+	</div>
+</section>
+
 <!-- Most-Loved Products Section || mlp = Most Loved Products -->
 
-	<section class="container">
+	<section class="container" id="featured">
 		<div class="mlp_container clearfix container">
 			<h2 class="mlp_hed"><em>Most-Loved</em> <strong>Products</strong></h2>
 			<ul>
@@ -85,19 +103,9 @@
 		</div>
 	</section>
 
-<!-- Mens and Womens Section || mw = Mens and Womens -->
-
-<section class="mw_container container">
-	<div class="men_list">
-		<p class="men_item wide_itm">MEN'S</p>
-		<p class="men_item square_itm">TRENDS</p>
-		<p class="men_item square_itm">GLASSES</p>
-	</div>
-</section>
-
 <!-- Sign Up Section || sufu = Sign Up For Updates -->
 
-	<section class="sufu">
+	<section class="sufu" id="updates">
 		<div class="sufu_container container">
 			<h2 class="sufu_hed"><em>Sign-up for</em> <strong>Updates</strong></h2>
 			<p class="sufu_par max_container">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
