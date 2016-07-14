@@ -438,7 +438,6 @@
 
 	.li_img {
 		margin-top: 50px;
-		width: 80%;
 	}
 
 	.itm_name {
@@ -703,10 +702,10 @@
 			min-height: 150px;
 		}
 
-		.mlp_container li {
+		/*.mlp_container li {
 			float: left;
 			width: 50%;
-		}
+		}*/
 
 		.itm_name {
 			font-size: 1.5rem;
@@ -769,9 +768,9 @@
 			height: 310px;
 		}
 
-		.mlp_container li {
+		/*.mlp_container li {
 			width: 25%;
-		} /*changed with so they fit into one line when on 1240px*/
+		} changed with so they fit into one line when on 1240px*/
 
 		.itm_name {
 			width: 100%;
