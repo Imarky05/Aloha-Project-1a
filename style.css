@@ -235,7 +235,7 @@
 		font-family: 'playfair_display';
 	}
 
-/*------------------------------------------Hand-Crafted Section || hc = Hand Crafted*/
+/*------------------------------Hand-Crafted Section || hc = Hand Crafted*/
 
 	.hc {
 		overflow: hidden;
@@ -401,6 +401,7 @@
 	}
 
 	.mlp_container li {
+		margin: 50px 0;
 		transition: .5s;
 		text-align: center;
 		font-size: 1rem;
@@ -436,9 +437,9 @@
 		font-weight: bold;
 	}
 
-	.li_img {
+	/*.li_img {
 		margin-top: 50px;
-	}
+	}*/
 
 	.itm_name {
 		margin-left: 10%;
@@ -702,10 +703,10 @@
 			min-height: 150px;
 		}
 
-		/*.mlp_container li {
+		.mlp_container li {
 			float: left;
-			width: 50%;
-		}*/
+			width: 50vw !important;
+		}
 
 		.itm_name {
 			font-size: 1.5rem;
@@ -768,9 +769,10 @@
 			height: 310px;
 		}
 
-		/*.mlp_container li {
-			width: 25%;
-		} changed with so they fit into one line when on 1240px*/
+		.mlp_container li {
+			float: left;
+			max-width: 410px !important;
+		}
 
 		.itm_name {
 			width: 100%;
