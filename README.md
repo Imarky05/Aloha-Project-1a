@@ -1,4 +1,4 @@
-#Aloha Porject 1a
+#Aloha Project 1
 
 ###Software:
 	- Sublime Text (editing)
